@@ -1,0 +1,16 @@
+#All related to jwt
+
+npm install --save @nestjs/passport passport
+npm install --save @nestjs/jwt passport-jwt
+npm install -D @types/passport-jwt
+
+========================
+nest g gu auth/guards/userRole --no-spec
+
+====CREATE DECORATOR=====
+nest g d auth/decorators/roleProtected --no-spec
+
+===================WEBSocket=============
+nest g res messageWs --no-spec
+npm i --save @nestjs/websockets @nestjs/platform-socket.io
+npm install socket.io
